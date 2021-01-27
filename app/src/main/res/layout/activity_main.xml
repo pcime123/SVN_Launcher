@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/title_line"
+        android:layout_width="1293dp"
+        android:layout_height="51dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--
+                <TextView
+                    style="@style/TextViewSwitch"
+                    android:text="PoE Off"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@color/Graytext"/>
+
+                <Switch
+                    android:id="@+id/ethernet_switch"
+                    style="@style/Switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginTop="10dp"
+                    android:checked="false"
+                    />
+
+                <TextView
+                    style="@style/TextViewSwitch"
+                    android:text="PoE On"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@color/Graytext"/> -->
+        <!--<ImageView-->
+        <!--android:id="@+id/eth_state"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_marginStart="810dp"-->
+        <!--android:layout_marginTop="20dp" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/wifi_state"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_marginStart="25dp"-->
+        <!--android:layout_marginTop="20dp" />-->
+
+        <!--<Button-->
+        <!--android:id="@+id/sdcard_state"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:layout_marginStart="20dp"-->
+        <!--android:layout_marginTop="25dp" />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+
+        android:layout_height="212dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_line">
+
+        <Button
+            android:id="@+id/main_network"
+            style="?android:buttonBarButtonStyle"
+
+            android:layout_width="280dp"
+            android:layout_height="190dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_ip"
+            android:gravity="start|bottom"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="15dp"
+            android:shadowColor="#000000"
+            android:shadowDx="3.0"
+            android:shadowDy="3.0"
+            android:shadowRadius="5.0"
+            android:singleLine="true"
+            android:text="@string/network_camera"
+            android:textAllCaps="false"
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/main_sdi"
+            style="?android:buttonBarButtonStyle"
+
+            android:layout_width="225dp"
+            android:layout_height="190dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_sdi"
+            android:gravity="start|bottom"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="15dp"
+            android:shadowColor="#000000"
+            android:shadowDx="3.0"
+            android:shadowDy="3.0"
+            android:shadowRadius="5.0"
+            android:singleLine="true"
+            android:text="@string/sdi_camera"
+            android:textAllCaps="false"
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/main_analog"
+            style="?android:buttonBarButtonStyle"
+
+            android:layout_width="225dp"
+            android:layout_height="190dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_analog"
+            android:ellipsize="marquee"
+            android:gravity="start|bottom"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="15dp"
+            android:shadowColor="#000000"
+            android:shadowDx="3.0"
+            android:shadowDy="3.0"
+            android:shadowRadius="5.0"
+            android:singleLine="true"
+            android:text="@string/hd_analog_camera"
+            android:textAllCaps="false"
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/main_hdmi"
+            android:layout_width="225dp"
+            android:layout_height="190dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/selector_hdmi"
+            android:ellipsize="marquee"
+            android:gravity="start|bottom"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="15dp"
+            android:shadowColor="#000000"
+            android:shadowDx="3.0"
+            android:shadowDy="3.0"
+            android:shadowRadius="5.0"
+            android:singleLine="true"
+            android:text="@string/hdmi"
+            android:textAllCaps="false"
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/main_tdrc"
+            android:layout_width="190dp"
+            android:layout_height="155dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/selector_tdrc"
+            android:ellipsize="marquee"
+            android:gravity="start|bottom"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="10dp"
+            android:shadowColor="#000000"
+            android:shadowDx="3.0"
+            android:shadowDy="3.0"
+            android:shadowRadius="5.0"
+            android:singleLine="true"
+            android:text="@string/tdrc"
+            android:textAllCaps="false"
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/main_tdru"
+            android:layout_width="190dp"
+            android:layout_height="155dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/selector_tdru"
+            android:ellipsize="marquee"
+            android:gravity="start|bottom"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="10dp"
+            android:shadowColor="#000000"
+            android:shadowDx="3.0"
+            android:shadowDy="3.0"
+            android:shadowRadius="5.0"
+            android:singleLine="true"
+            android:text="@string/tdru"
+            android:textAllCaps="false"
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/main_apps"
+            android:layout_width="190dp"
+            android:layout_height="155dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/selector_optical"
+            android:ellipsize="marquee"
+            android:gravity="start|bottom"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="10dp"
+            android:shadowColor="#000000"
+            android:shadowDx="3.0"
+            android:shadowDy="3.0"
+            android:shadowRadius="5.0"
+            android:singleLine="true"
+            android:text="@string/my_apps"
+            android:textAllCaps="false"
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/main_packet"
+            android:layout_width="185dp"
+            android:layout_height="155dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/selector_packet"
+            android:ellipsize="marquee"
+            android:gravity="start|bottom"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="10dp"
+            android:shadowColor="#000000"
+            android:shadowDx="3.0"
+            android:shadowDy="3.0"
+            android:shadowRadius="5.0"
+            android:singleLine="true"
+            android:text="@string/packet"
+            android:textAllCaps="false"
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/main_update"
+            android:layout_width="185dp"
+            android:layout_height="155dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/selector_update"
+            android:ellipsize="marquee"
+            android:gravity="start|bottom"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="10dp"
+            android:shadowColor="#000000"
+            android:shadowDx="3.0"
+            android:shadowDy="3.0"
+            android:shadowRadius="5.0"
+            android:singleLine="true"
+            android:text="@string/app_update"
+            android:textAllCaps="false"
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/title_line1"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="678dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.018"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <Button
+                android:id="@+id/sub_gallery"
+                style="?android:buttonBarButtonStyle"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/selector_gallery" />
+
+            <Button
+                android:id="@+id/sub_manager"
+                style="?android:buttonBarButtonStyle"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/selector_manager"
+
+                />
+
+
+            <Button
+                android:id="@+id/sub_browser"
+                style="?android:buttonBarButtonStyle"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/selector_broswer" />
+
+
+            <Button
+                android:id="@+id/sub_ethernet"
+                style="?android:buttonBarButtonStyle"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/selector_ethernet"
+
+                />
+
+            <Button
+                android:id="@+id/sub_sdcard"
+                style="?android:buttonBarButtonStyle"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/selector_sdcard" />
+
+            <Button
+                android:id="@+id/sub_setting"
+                style="?android:buttonBarButtonStyle"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/selector_setting" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="678dp"
+            android:layout_height="50dp"
+
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="90dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:singleLine="true"
+                android:text="@string/gallery"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:singleLine="true"
+                android:text="@string/file_manager"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:singleLine="true"
+                android:text="@string/browser"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:singleLine="true"
+                android:text="@string/ethernet_configuration"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:singleLine="true"
+                android:text="@string/sd_card"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:singleLine="true"
+                android:text="@string/settings"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="sans-serif-thin"
+            android:letterSpacing="0.05"
+            android:textColor="@color/match_color"
+            android:textSize="40sp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="40dp"
+
+            android:fontFamily="sans-serif-thin"
+            android:letterSpacing="0.05"
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="70sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>
